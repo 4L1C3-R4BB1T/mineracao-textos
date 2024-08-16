@@ -1,3 +1,5 @@
+# Pré-processamento com NLTK
+
 ```py
 import re
 import string
@@ -52,6 +54,8 @@ texto_sem_caracteres_especiais = [re.sub(r'[^\w\s\U0001F600-\U0001F64F\U0001F300
 
 ## Aplicar stemização
 
+Reduzir a palavra à sua raiz ou radical.
+
 ```py
 stemmer = PorterStemmer()
 
@@ -61,6 +65,8 @@ texto_com_stemizacao = [stemmer.stem(palavra) for palavra in palavras]
 ```
 
 ## Aplicar lematização
+
+Palavras em sua forma infinitiva dos verbos e no masculino singular dos substantivos e adjetivos.
 
 ```py
 lemmatizer = WordNetLemmatizer()
