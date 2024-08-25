@@ -9,15 +9,21 @@
 
 É uma etapa preparatória para as tarefas de mineração de texto e tem papel importante na adequação de dados para um padrão que auxilie nas diferentes tarefas a serem realizadas.
 
+---
+
 ### 🔸 Análise Exploratória de Dados
 
 É uma etapa importante em qualquer projeto de NLP, pois permite a compreensão dos dados de texto, a descoberta de padrões e a obtenção de insights. 
+
+---
 
 ### 🔸 Treinamento e Teste
 
 **Treinamento:** é um processo que visa ensinar um modelo (programa) a partir de dados existentes. O modelo será capaz de tomar decisões com base no aprendizado obtido durante o treinamento.
 
 **Teste:** é a fase em que o modelo treinado coloca em prática o aprendizado adquirido na fase do treino (treinamento).
+
+---
 
 ### 🔸 Métricas de Avaliação do Modelo
 
