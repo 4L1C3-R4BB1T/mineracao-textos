@@ -1,4 +1,8 @@
-# Pré-processamento com NLTK
+🔙 [Voltar para o Início](https://github.com/4L1C3-R4BB1T/mineracao-textos "Voltar para o Início")
+
+---
+
+# 🔻 Pré-processamento com NLTK
 
 ```py
 import re
@@ -24,7 +28,7 @@ with open('no14011801.txt', 'r', encoding='utf-8') as texto:
 palavras = word_tokenize(tribuna)
 ```
 
-## Remover stopwords
+## 🔸 Remover stopwords
 
 ```py
 # compara cada palavra do texto pra ver se e uma stopword
@@ -34,7 +38,7 @@ texto_sem_stopwords = [palavra for palavra in palavras if not palavra.lower() in
 ' '.join(texto_sem_stopwords)
 ```
 
-## Remover sinais de pontuação
+## 🔸 Remover sinais de pontuação
 
 ```py
 # compara cada palavra do texto pra ver se e um sinal de pontuacao
@@ -47,7 +51,7 @@ texto_sem_pontuacao = [palavra for palavra in palavras if not palavra in string.
 ' '.join(texto_sem_pontuacao)
 ```
 
-## Remover caracteres especiais (exceto emoji)
+## 🔸 Remover caracteres especiais (exceto emoji)
 
 ```py
 # compara cada palavra do texto pra ver se e um caractere especial
@@ -56,7 +60,7 @@ texto_sem_caracteres_especiais = [re.sub(r'[^\w\s\U0001F600-\U0001F64F\U0001F300
 ' '.join(texto_sem_caracteres_especiais)
 ```
 
-## Aplicar stemização
+## 🔸 Aplicar stemização
 
 Reduzir a palavra à sua raiz ou radical.
 
@@ -68,7 +72,7 @@ texto_com_stemizacao = [stemmer.stem(palavra) for palavra in palavras]
 ' '.join(texto_com_stemizacao)
 ```
 
-## Aplicar lematização
+## 🔸 Aplicar lematização
 
 Palavras em sua forma infinitiva dos verbos e no masculino singular dos substantivos e adjetivos.
 
